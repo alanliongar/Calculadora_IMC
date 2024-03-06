@@ -1,5 +1,6 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -25,7 +26,6 @@ class MainActivity : AppCompatActivity() {
             //Ação do botão
             val altura = edtaltura.text.toString().toFloatOrNull()
             val peso = edtpeso.text.toString().toFloatOrNull()
-
             if (peso == null) {
                 println("Peso está vazio")
                 Snackbar.make(edtpeso, "Preencha o peso", Snackbar.LENGTH_LONG).show()
@@ -37,8 +37,14 @@ class MainActivity : AppCompatActivity() {
                 Snackbar.make(edtaltura, "Preencha a altura", Snackbar.LENGTH_LONG).show()
                 return@setOnClickListener
             }
-
-            println(peso / (altura * altura))
+            val resultado = (peso / (altura * altura)) //Coloquei o resultado aqui em baixo, pois precisamos garantir que as duas outras variáveis sejam não-null
+            // Navegar para a próxima tela
+            // Criar o layout da próxima tela
+            // Passar dados (resultado) para a próxima tela
+            // Intent - Classe do próprio android
+            val intent = Intent(this, ResultActivity::class.java) //this = classe atual
+            intent.putExtra(KEY_RESULT_IMC, resultado)
+            startActivity(intent)
         }
             //o código abaixo serviu para outro aprendizado, uso de if numa linha só, por exemplo...
             //val altura = edtaltura.toString().toFloatOrNull()
