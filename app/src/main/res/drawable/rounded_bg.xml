@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/Gray_bg"/> <!--Cor cinza para o plano de fundo -->
+    <corners android:radius="25dp"/> <!--Raio para os cantos arredondados-->
+</shape>
