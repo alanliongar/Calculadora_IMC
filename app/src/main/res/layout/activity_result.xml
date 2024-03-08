@@ -66,19 +66,19 @@
         <TextView
             android:id="@+id/tv_classificacao_label"
             android:layout_width="match_parent"
-            android:textSize="18dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="A classificação do seu imc é: " />
+            android:text="A classificação do seu imc é: "
+            android:textSize="18dp" />
 
         <TextView
             android:id="@+id/tv_classificacao"
-            android:textColor="@color/primary_650"
-            android:textSize="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textSize="30dp"
             android:textStyle="bold"
-            tools:text="NORMAL" />
+            tools:text="NORMAL"
+            tools:textColor="@color/primary_650" />
     </LinearLayout>
 </LinearLayout>
