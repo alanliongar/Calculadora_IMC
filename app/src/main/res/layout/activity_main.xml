@@ -23,7 +23,8 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:src="@drawable/ic_weight"
-            app:tint="@color/white" />
+            app:tint="@color/white" >
+        </ImageView>
 
         <TextView
             android:layout_width="wrap_content"
@@ -34,7 +35,8 @@
             android:text="Calculadora IMC"
             android:textColor="@color/white"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold">
+        </TextView>
 
         <TextView
             android:layout_width="wrap_content"
@@ -43,7 +45,8 @@
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="48dp"
             android:text="Preencha todos os campos para calcular seu IMC"
-            android:textColor="@color/white" />
+            android:textColor="@color/white">
+        </TextView>
     </LinearLayout>
 
     <Button
@@ -54,7 +57,8 @@
         android:text="Calcular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
+    </Button>
 
     <Button
         android:id="@+id/btn_limpar"
@@ -67,7 +71,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+    </Button>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -89,7 +94,8 @@
             android:hint="Digite seu peso - Ex: 70.200"
             android:inputType="numberDecimal"
             android:maxLength="6"
-            android:textColor="@color/primary_650" />
+            android:textColor="@color/primary_650">
+        </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -112,6 +118,7 @@
             android:hint="Digite sua altura - ex: 1.72"
             android:inputType="numberDecimal"
             android:maxLength="5"
-            android:textColor="@color/primary_650" />
+            android:textColor="@color/primary_650">
+        </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
